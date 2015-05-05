@@ -30,11 +30,13 @@ var showListT = [{url:'http://www.bananaidolshow.com/3151.html',showName: '奔�
 								 {url:'http://www.bananaidol.net/3144.html',showName: '奔跑吧兄弟'},
 								 {url:'http://www.bananaidol.net/3082.html',showName: '國光幫幫忙'},
 								 {url:'http://www.bananaidol.net/2825.html',showName: '大學生了沒'},
-								 {url:'http://www.bananaidolshow.com/903.html',showName: '爸爸去哪兒'}];
+								 {url:'http://www.bananaidolshow.com/903.html',showName: '爸爸去哪兒'},
+								 {url:'http://www.bananaidol.com/6834.html',showName:'學校2015'}];
 
 for (var i = showListT.length - 1; i >= 0; i--) {
 	reqBananaidolShow(showListT[i].url, showListT[i].showName);
 };
+console.log(showList);
 
 /* GET users listing. */
 router.get('/', function(req, res) {
