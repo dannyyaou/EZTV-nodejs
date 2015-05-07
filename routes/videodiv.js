@@ -10,11 +10,11 @@ router.get('/', function(req, res) {
   var url = req.query.url;
   var videodiv;
   request(url,function(error, response, body){
-  	if(!error && response.statusCode == 200){
-  		var $ = cheerio.load(body);
-  		videodiv = $('#video').html();
-  		res.send(videodiv);
-  	}
+    if(!error && response.statusCode == 200){
+      var $ = cheerio.load(body);
+      videodiv = $('#video').html();
+      res.send(videodiv);
+    }
   });
   
 });

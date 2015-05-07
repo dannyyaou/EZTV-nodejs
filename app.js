@@ -9,6 +9,7 @@ var cors = require('cors')
 var routes = require('./routes/index');
 var showList = require('./routes/showList');
 var videodiv = require('./routes/videodiv');
+var allshowlist = require('./routes/allshowlist')
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use(cors());
 app.use('/', routes);
 app.use('/showlist', showList);
 app.use('/videodiv', videodiv);
+app.use('/allshowlist', allshowlist);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
